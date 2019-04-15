@@ -1,7 +1,7 @@
 def sentiment()
   lookup = Hash.new
   file = "movie_reviews.txt"
-  data = '';
+  data = ''
 
   File.foreach(file) do |line|
     data << line.downcase
